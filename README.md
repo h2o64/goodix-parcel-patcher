@@ -20,6 +20,7 @@ This repository presents a script which automates the patching process
 ## Tutorial
 
 1. Ghidra work
+
 	a. Download Ghidra [here](https://ghidra-sre.org/)
 	b. Create a new project and import all the goodix libraries (those should be in the `WORKING` folder)
 	c. Analyze all the files
@@ -30,6 +31,7 @@ This repository presents a script which automates the patching process
 	```
 	(/!\ This step may return lines with "Warning" in, please remove it and do this step manually)
 2. `objdump`
+
 	a. Install AARCH64 toolchain
 	```shell
 	sudo apt-get install binutils-aarch64-linux-gnu
@@ -39,6 +41,7 @@ This repository presents a script which automates the patching process
 	aarch64-linux-android-objdump -d WORKING/filename.so > DATA/filename.asm
 	```
 3. Execute the script
+
 	a. Install Python 3 depedencies
 	```shell
 	pip3 install -r requierments.txt
